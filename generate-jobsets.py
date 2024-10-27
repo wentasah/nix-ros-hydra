@@ -19,7 +19,7 @@ def template(branch, system, toplevelOnly=False, distro=None):
         "inputs": {
             "nix-ros-overlay": {
                 "type": "git",
-                "value": f"https://github.com/lopsided98/nix-ros-overlay {branch}",
+                "value": f"https://github.com/wentasah/nix-ros-overlay {branch}",
                 "emailresponsible": False
             },
             "system": {
