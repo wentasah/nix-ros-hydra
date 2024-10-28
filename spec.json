@@ -24,12 +24,37 @@
       },
       "distro": {
         "type": "string",
-        "value": null,
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "master-examples-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay master",
         "emailresponsible": false
       },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "true",
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
         "emailresponsible": false
       }
     }
@@ -61,11 +86,6 @@
         "type": "string",
         "value": "noetic",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -95,11 +115,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -131,11 +146,6 @@
         "type": "string",
         "value": "iron",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -165,11 +175,6 @@
       "distro": {
         "type": "string",
         "value": "jazzy",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -201,11 +206,6 @@
         "type": "string",
         "value": "rolling",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -234,12 +234,37 @@
       },
       "distro": {
         "type": "string",
-        "value": null,
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "master-examples-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay master",
         "emailresponsible": false
       },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "true",
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
         "emailresponsible": false
       }
     }
@@ -271,11 +296,6 @@
         "type": "string",
         "value": "noetic",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -305,11 +325,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -341,11 +356,6 @@
         "type": "string",
         "value": "iron",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -375,11 +385,6 @@
       "distro": {
         "type": "string",
         "value": "jazzy",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -411,11 +416,6 @@
         "type": "string",
         "value": "rolling",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -444,12 +444,37 @@
       },
       "distro": {
         "type": "string",
-        "value": null,
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "develop-examples-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
         "emailresponsible": false
       },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "true",
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
         "emailresponsible": false
       }
     }
@@ -481,11 +506,6 @@
         "type": "string",
         "value": "noetic",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -515,11 +535,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -551,11 +566,6 @@
         "type": "string",
         "value": "iron",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -585,11 +595,6 @@
       "distro": {
         "type": "string",
         "value": "jazzy",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -621,11 +626,6 @@
         "type": "string",
         "value": "rolling",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -654,12 +654,37 @@
       },
       "distro": {
         "type": "string",
-        "value": null,
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "develop-examples-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
         "emailresponsible": false
       },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "true",
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
         "emailresponsible": false
       }
     }
@@ -691,11 +716,6 @@
         "type": "string",
         "value": "noetic",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -725,11 +745,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
@@ -761,11 +776,6 @@
         "type": "string",
         "value": "iron",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -796,11 +806,6 @@
         "type": "string",
         "value": "jazzy",
         "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
-        "emailresponsible": false
       }
     }
   },
@@ -830,11 +835,6 @@
       "distro": {
         "type": "string",
         "value": "rolling",
-        "emailresponsible": false
-      },
-      "toplevelOnly": {
-        "type": "boolean",
-        "value": "false",
         "emailresponsible": false
       }
     }
