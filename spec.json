@@ -5,7 +5,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -35,7 +35,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -65,7 +65,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -95,7 +95,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -125,7 +125,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -155,7 +155,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -185,7 +185,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -215,7 +215,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -245,7 +245,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -275,7 +275,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -305,7 +305,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -335,7 +335,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -365,7 +365,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -395,7 +395,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -425,7 +425,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -455,7 +455,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -485,7 +485,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -515,7 +515,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -545,7 +545,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -575,7 +575,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -605,7 +605,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -635,7 +635,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -665,7 +665,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -695,7 +695,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -725,7 +725,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -755,7 +755,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -785,7 +785,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -815,7 +815,7 @@
     "description": "",
     "nixexprinput": "nix-ros-overlay",
     "nixexprpath": "release.nix",
-    "checkinterval": 300,
+    "checkinterval": 3600,
     "schedulingshares": 100,
     "enableemail": false,
     "enable_dynamic_run_command": false,
@@ -835,6 +835,496 @@
       "distro": {
         "type": "string",
         "value": "rolling",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-top-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".top",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-examples-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-noetic-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-humble-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "humble",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-iron-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "iron",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-jazzy-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "jazzy",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-rolling-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "rolling",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-top-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".top",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-examples-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-noetic-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-humble-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "humble",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-iron-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "iron",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-jazzy-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "jazzy",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      }
+    }
+  },
+  "unstable-rolling-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "rolling",
+        "emailresponsible": false
+      },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
         "emailresponsible": false
       }
     }
