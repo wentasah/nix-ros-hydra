@@ -10,7 +10,7 @@ def template(branch, system, toplevelOnly=False, distro=None):
         "description": "",
         "nixexprinput": "nix-ros-overlay",
         "nixexprpath": "release.nix",
-        "checkinterval": 300,
+        "checkinterval": 3600,
         "schedulingshares": 100,
         "enableemail": False,
         "enable_dynamic_run_command": False,
