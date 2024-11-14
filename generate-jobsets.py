@@ -3,7 +3,14 @@
 import json
 
 
-def template(branch, system, toplevelOnly=False, distro=None, nixpkgs_branch=None):
+def template(
+    branch,
+    system,
+    toplevelOnly=False,
+    distro=None,
+    nixpkgs_branch=None,
+    schedulingshares=100,
+):
     inputs = {
         "nix-ros-overlay": {
             "type": "git",
@@ -36,7 +43,7 @@ def template(branch, system, toplevelOnly=False, distro=None, nixpkgs_branch=Non
         "nixexprinput": "nix-ros-overlay",
         "nixexprpath": "release.nix",
         "checkinterval": 3600,
-        "schedulingshares": 100,
+        "schedulingshares": schedulingshares,
         "enableemail": False,
         "enable_dynamic_run_command": False,
         "emailoverride": "",
@@ -53,11 +60,20 @@ for job_type in ['master', 'develop', 'unstable']:
             if job_type == 'unstable':
                 branch = "develop"
                 nixpkgs_branch = "nixos-unstable"
+                schedulingshares = 30
             else:
                 branch = job_type
                 nixpkgs_branch = None
+                schedulingshares = 100
             jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
-                template(branch, system, False, distro, nixpkgs_branch)
+                template(
+                    branch,
+                    system,
+                    False,
+                    distro,
+                    nixpkgs_branch,
+                    schedulingshares=schedulingshares,
+                )
             )
 
 print(json.dumps(jobsets, indent=2))
