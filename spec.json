@@ -81,11 +81,6 @@
         "type": "string",
         "value": "x86_64-linux",
         "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
-        "emailresponsible": false
       }
     }
   },
@@ -320,11 +315,6 @@
       "system": {
         "type": "string",
         "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
         "emailresponsible": false
       }
     }
@@ -561,11 +551,6 @@
         "type": "string",
         "value": "x86_64-linux",
         "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
-        "emailresponsible": false
       }
     }
   },
@@ -800,11 +785,6 @@
       "system": {
         "type": "string",
         "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
         "emailresponsible": false
       }
     }
@@ -1050,11 +1030,6 @@
       "system": {
         "type": "string",
         "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
         "emailresponsible": false
       },
       "nixpkgs": {
@@ -1330,11 +1305,6 @@
       "system": {
         "type": "string",
         "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": null,
         "emailresponsible": false
       },
       "nixpkgs": {

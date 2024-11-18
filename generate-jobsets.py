@@ -21,12 +21,15 @@ def template(
             "value": system,
             "emailresponsible": False
         },
-        "distro": {
-            "type": "string",
-            "value": distro,
-            "emailresponsible": False
-        },
     }
+    if distro is not None:
+        inputs.update({
+            "distro": {
+                "type": "string",
+                "value": distro,
+                "emailresponsible": False
+            },
+        })
     if nixpkgs_branch is not None:
         inputs.update({
             "nixpkgs": {
