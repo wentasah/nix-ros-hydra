@@ -21,6 +21,8 @@ The jobsets are named as `type-pkgset-arch`, where:
 - `top`: representing top-level packages (not part of any distro) such
   as `colcon`, `bloom`, etc.
 - `examples`: examples from the `examples` subdirectory.
+- `all`: all above package sets together. Useful for overall overview
+  and easy comparison of different evaluations.
 
 [hydra jobsets]: https://hydra.iid.ciirc.cvut.cz/project/nix-ros-overlay
 [nix-ros-overlay]: https://github.com/lopsided98/nix-ros-overlay

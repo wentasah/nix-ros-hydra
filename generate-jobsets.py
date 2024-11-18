@@ -6,7 +6,6 @@ import json
 def template(
     branch,
     system,
-    toplevelOnly=False,
     distro=None,
     nixpkgs_branch=None,
     schedulingshares=100,
@@ -56,7 +55,7 @@ jobsets = {}
 
 for job_type in ['master', 'develop', 'unstable']:
     for system in ['x86_64-linux', 'aarch64-linux']:
-        for distro in ['.top', '.examples', 'noetic', 'humble', 'iron', 'jazzy', 'rolling']:
+        for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'iron', 'jazzy', 'rolling']:
             if job_type == 'unstable':
                 branch = "develop"
                 nixpkgs_branch = "nixos-unstable"
@@ -69,8 +68,7 @@ for job_type in ['master', 'develop', 'unstable']:
                 template(
                     branch,
                     system,
-                    False,
-                    distro,
+                    distro if distro != ".all" else None,
                     nixpkgs_branch,
                     schedulingshares=schedulingshares,
                 )
