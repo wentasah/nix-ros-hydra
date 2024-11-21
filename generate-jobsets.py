@@ -13,7 +13,7 @@ def template(
     inputs = {
         "nix-ros-overlay": {
             "type": "git",
-            "value": f"https://github.com/wentasah/nix-ros-overlay {branch}",
+            "value": f"https://github.com/{'lopsided98' if branch == 'develop' else 'wentasah'}/nix-ros-overlay {branch}",
             "emailresponsible": False
         },
         "system": {
