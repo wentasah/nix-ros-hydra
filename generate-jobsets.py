@@ -9,6 +9,7 @@ def template(
     distro=None,
     nixpkgs_branch=None,
     schedulingshares=100,
+    keepnr=20,
 ):
     inputs = {
         "nix-ros-overlay": {
@@ -49,7 +50,7 @@ def template(
         "enableemail": False,
         "enable_dynamic_run_command": False,
         "emailoverride": "",
-        "keepnr": 20,
+        "keepnr": keepnr,
         "inputs": inputs
     }
 
@@ -63,10 +64,12 @@ for job_type in ['master', 'develop', 'unstable']:
                 branch = "develop"
                 nixpkgs_branch = "nixos-unstable"
                 schedulingshares = 30
+                keepnr = 5
             else:
                 branch = job_type
                 nixpkgs_branch = None
                 schedulingshares = 100
+                keepnr = 20
             jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                 template(
                     branch,
@@ -74,6 +77,7 @@ for job_type in ['master', 'develop', 'unstable']:
                     distro if distro != ".all" else None,
                     nixpkgs_branch,
                     schedulingshares=schedulingshares,
+                    keepnr=keepnr
                 )
             )
 
