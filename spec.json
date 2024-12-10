@@ -1488,5 +1488,475 @@
         "emailresponsible": false
       }
     }
+  },
+  "wsh-test-top-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-examples-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-all-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-noetic-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-humble-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "humble",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-iron-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "iron",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-jazzy-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "jazzy",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-rolling-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "rolling",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-top-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".top",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-examples-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": ".examples",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-all-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-noetic-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-humble-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "humble",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-iron-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "iron",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-jazzy-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "jazzy",
+        "emailresponsible": false
+      }
+    }
+  },
+  "wsh-test-rolling-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "rolling",
+        "emailresponsible": false
+      }
+    }
   }
 }

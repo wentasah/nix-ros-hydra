@@ -4,6 +4,7 @@ import json
 
 
 def template(
+    owner,
     branch,
     system,
     distro=None,
@@ -14,7 +15,7 @@ def template(
     inputs = {
         "nix-ros-overlay": {
             "type": "git",
-            "value": f"https://github.com/{'lopsided98' if branch == 'develop' else 'wentasah'}/nix-ros-overlay {branch}",
+            "value": f"https://github.com/{owner}/nix-ros-overlay {branch}",
             "emailresponsible": False
         },
         "system": {
@@ -57,21 +58,32 @@ def template(
 
 jobsets = {}
 
-for job_type in ['master', 'develop', 'unstable']:
+for job_type in ['master', 'develop', 'unstable', 'wsh-test']:
     for system in ['x86_64-linux', 'aarch64-linux']:
         for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'iron', 'jazzy', 'rolling']:
+            # Set job defaults
+            owner = 'lopsided98'
+            branch = job_type
+            nixpkgs_branch = None
+            schedulingshares = 100
+            keepnr = 20
+
+            # Override job parameters
+            if branch == 'master':
+                owner = "wentasah"  # my release.nix changes are not yet in master
             if job_type == 'unstable':
                 branch = "develop"
                 nixpkgs_branch = "nixos-unstable"
                 schedulingshares = 30
                 keepnr = 5
-            else:
-                branch = job_type
-                nixpkgs_branch = None
-                schedulingshares = 100
-                keepnr = 20
+            elif job_type == 'wsh-test':
+                owner = "wentasah"
+                branch = "test"
+                keepnr = 1
+
             jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                 template(
+                    owner,
                     branch,
                     system,
                     distro if distro != ".all" else None,
