@@ -57,7 +57,7 @@ def template(
 
 
 def generate_nix_ros_overlay(jobsets):
-    for job_type in ['master', 'develop', 'unstable', 'wsh-test']:
+    for job_type in ['master', 'develop', 'unstable']:
         for system in ['x86_64-linux', 'aarch64-linux']:
             for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'iron', 'jazzy', 'rolling']:
                 # Set job defaults
@@ -75,10 +75,6 @@ def generate_nix_ros_overlay(jobsets):
                     nixpkgs_branch = "nixos-unstable"
                     schedulingshares = 30
                     keepnr = 5
-                elif job_type == 'wsh-test':
-                    owner = "wentasah"
-                    branch = "test"
-                    keepnr = 1
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                     template(
@@ -95,7 +91,8 @@ def generate_nix_ros_overlay(jobsets):
 def generate_experiments(jobsets):
     for owner, branch in [
             ("lopsided98", "develop"),
-            ("wentasah", "finalAttrs")
+            ("wentasah", "finalAttrs"),
+            ("wentasah", "test"),
     ]:
         jobsets[f"{owner}-{branch}"] = template(
             owner,

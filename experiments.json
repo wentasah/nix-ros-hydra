@@ -48,5 +48,30 @@
         "emailresponsible": false
       }
     }
+  },
+  "wentasah-test": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-overlay",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 50,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-overlay test",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      }
+    }
   }
 }
