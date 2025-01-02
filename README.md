@@ -7,9 +7,9 @@ The jobsets are named as `type-pkgset-arch`, where:
 
 `type` is one of:
 
-- `master`: `master` branch of nix-ros-overlay. This branch is
-  typically some commits behind `develop` and represents what users
-  should use.
+- `master`: `master` branch of nix-ros-overlay. Usually, this branch
+  is some commits behind `develop` and represents what users should
+  use.
 - `develop`: `develop` branch of nix-ros-overlay built against a
   pinned version of nixpkgs.
 - `unstable`: `develop` branch of nix-ros-overlay built against
