@@ -11,6 +11,7 @@ def template(
     nixpkgs_branch=None,
     schedulingshares=100,
     keepnr=20,
+    checkinterval=3600,
 ):
     inputs = {
         "nix-ros-overlay": {
@@ -46,7 +47,7 @@ def template(
         "description": "",
         "nixexprinput": "nix-ros-overlay",
         "nixexprpath": "release.nix",
-        "checkinterval": 3600,
+        "checkinterval": checkinterval,
         "schedulingshares": schedulingshares,
         "enableemail": False,
         "enable_dynamic_run_command": False,
@@ -66,6 +67,7 @@ def generate_nix_ros_overlay(jobsets):
                 nixpkgs_branch = None
                 schedulingshares = 100
                 keepnr = 20
+                checkinterval = 3600
 
                 # Override job parameters
                 if branch == 'master':
@@ -75,6 +77,8 @@ def generate_nix_ros_overlay(jobsets):
                     nixpkgs_branch = "nixos-unstable"
                     schedulingshares = 30
                     keepnr = 5
+                if job_type == 'develop':
+                    checkinterval = 300
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                     template(
@@ -84,7 +88,8 @@ def generate_nix_ros_overlay(jobsets):
                         distro if distro != ".all" else None,
                         nixpkgs_branch,
                         schedulingshares=schedulingshares,
-                        keepnr=keepnr
+                        keepnr=keepnr,
+                        checkinterval=checkinterval,
                     )
                 )
 
