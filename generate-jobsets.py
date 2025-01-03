@@ -59,7 +59,7 @@ def template(
 def generate_nix_ros_overlay(jobsets):
     for job_type in ['master', 'develop', 'unstable']:
         for system in ['x86_64-linux', 'aarch64-linux']:
-            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'iron', 'jazzy', 'rolling']:
+            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'rolling']:
                 # Set job defaults
                 owner = 'lopsided98'
                 branch = job_type

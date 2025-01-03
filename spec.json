@@ -144,36 +144,6 @@
       }
     }
   },
-  "master-iron-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
-        "emailresponsible": false
-      }
-    }
-  },
   "master-jazzy-x86_64": {
     "enabled": 1,
     "hidden": false,
@@ -375,36 +345,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      }
-    }
-  },
-  "master-iron-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
         "emailresponsible": false
       }
     }
@@ -614,36 +554,6 @@
       }
     }
   },
-  "develop-iron-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
-        "emailresponsible": false
-      }
-    }
-  },
   "develop-jazzy-x86_64": {
     "enabled": 1,
     "hidden": false,
@@ -845,36 +755,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      }
-    }
-  },
-  "develop-iron-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
         "emailresponsible": false
       }
     }
@@ -1100,41 +980,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "nixpkgs": {
-        "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
-        "emailresponsible": false
-      }
-    }
-  },
-  "unstable-iron-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 30,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 5,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
         "emailresponsible": false
       },
       "nixpkgs": {
@@ -1375,41 +1220,6 @@
       "distro": {
         "type": "string",
         "value": "humble",
-        "emailresponsible": false
-      },
-      "nixpkgs": {
-        "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
-        "emailresponsible": false
-      }
-    }
-  },
-  "unstable-iron-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-overlay",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 30,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 5,
-    "inputs": {
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "iron",
         "emailresponsible": false
       },
       "nixpkgs": {
