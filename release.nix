@@ -14,7 +14,17 @@ in
   system ? builtins.currentSystem,
 }:
 let
-  pkgs = import nix-ros-overlay { inherit nixpkgs system; };
+  pkgs = import nix-ros-overlay {
+    inherit nixpkgs system;
+    config = {
+      # Allow building gz-sim-vendor and related packages by hydra.
+      # Without this, we get eval failures and don't know about other
+      # errors. Users then complain about them.
+      permittedInsecurePackages = [
+        "freeimage-unstable-2021-11-01"
+      ];
+    };
+  };
   inherit (pkgs.lib) isDerivation filterAttrs;
   inherit (builtins) mapAttrs attrNames filter listToAttrs readDir;
   cleanupDistro = (_: a: removeAttrs a [
