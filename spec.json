@@ -3,7 +3,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -12,9 +12,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -33,7 +38,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -42,9 +47,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -63,7 +73,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -72,9 +82,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -88,7 +103,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -97,9 +112,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -118,7 +138,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -127,9 +147,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -148,7 +173,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -157,9 +182,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -178,7 +208,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -187,9 +217,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -208,7 +243,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -217,9 +252,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -238,7 +278,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -247,9 +287,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -268,7 +313,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -277,9 +322,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -293,7 +343,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -302,9 +352,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -323,7 +378,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -332,9 +387,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -353,7 +413,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -362,9 +422,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -383,7 +448,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 100,
@@ -392,9 +457,14 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay master",
+        "value": "https://github.com/lopsided98/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
@@ -413,7 +483,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -422,6 +492,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -443,7 +518,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -452,6 +527,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -473,7 +553,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -482,6 +562,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -498,7 +583,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -507,6 +592,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -528,7 +618,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -537,6 +627,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -558,7 +653,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -567,6 +662,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -588,7 +688,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -597,6 +697,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -618,7 +723,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -627,6 +732,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -648,7 +758,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -657,6 +767,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -678,7 +793,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -687,6 +802,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -703,7 +823,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -712,6 +832,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -733,7 +858,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -742,6 +867,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -763,7 +893,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -772,6 +902,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -793,7 +928,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 300,
     "schedulingshares": 100,
@@ -802,6 +937,11 @@
     "emailoverride": "",
     "keepnr": 20,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -823,7 +963,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -832,6 +972,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -858,7 +1003,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -867,6 +1012,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -893,7 +1043,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -902,6 +1052,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -923,7 +1078,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -932,6 +1087,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -958,7 +1118,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -967,6 +1127,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -993,7 +1158,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1002,6 +1167,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1028,7 +1198,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1037,6 +1207,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1063,7 +1238,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1072,6 +1247,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1098,7 +1278,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1107,6 +1287,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1133,7 +1318,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1142,6 +1327,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1163,7 +1353,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1172,6 +1362,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1198,7 +1393,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1207,6 +1402,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1233,7 +1433,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1242,6 +1442,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -1268,7 +1473,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 30,
@@ -1277,6 +1482,11 @@
     "emailoverride": "",
     "keepnr": 5,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",

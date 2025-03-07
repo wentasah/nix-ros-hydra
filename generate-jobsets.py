@@ -67,7 +67,6 @@ def generate_nix_ros_overlay(jobsets):
         for system in ['x86_64-linux', 'aarch64-linux']:
             for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'rolling']:
                 # Set job defaults
-                owner = 'lopsided98'
                 branch = job_type
                 nixpkgs_branch = None
                 schedulingshares = 100
@@ -75,8 +74,6 @@ def generate_nix_ros_overlay(jobsets):
                 checkinterval = 3600
 
                 # Override job parameters
-                if branch == 'master':
-                    owner = "wentasah"  # my release.nix changes are not yet in master
                 if job_type == 'unstable':
                     branch = "develop"
                     nixpkgs_branch = "nixos-unstable"
@@ -87,7 +84,7 @@ def generate_nix_ros_overlay(jobsets):
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                     template(
-                        owner,
+                        'lopsided98',
                         branch,
                         system,
                         distro if distro != ".all" else None,
