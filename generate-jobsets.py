@@ -14,6 +14,11 @@ def template(
     checkinterval=3600,
 ):
     inputs = {
+        "nix-ros-hydra": {
+            "type": "git",
+            "value": "https://github.com/wentasah/nix-ros-hydra main",
+            "emailresponsible": False
+        },
         "nix-ros-overlay": {
             "type": "git",
             "value": f"https://github.com/{owner}/nix-ros-overlay {branch}",
@@ -45,7 +50,7 @@ def template(
         "enabled": 1,
         "hidden": False,
         "description": "",
-        "nixexprinput": "nix-ros-overlay",
+        "nixexprinput": "nix-ros-hydra",
         "nixexprpath": "release.nix",
         "checkinterval": checkinterval,
         "schedulingshares": schedulingshares,

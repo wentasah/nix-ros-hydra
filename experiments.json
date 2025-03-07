@@ -3,7 +3,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 50,
@@ -12,6 +12,11 @@
     "emailoverride": "",
     "keepnr": 1,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/lopsided98/nix-ros-overlay develop",
@@ -28,7 +33,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 50,
@@ -37,6 +42,11 @@
     "emailoverride": "",
     "keepnr": 1,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/wentasah/nix-ros-overlay ament-vendor-auto-update",
@@ -53,7 +63,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 50,
@@ -62,6 +72,11 @@
     "emailoverride": "",
     "keepnr": 1,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/wentasah/nix-ros-overlay finalAttrs",
@@ -78,7 +93,7 @@
     "enabled": 1,
     "hidden": false,
     "description": "",
-    "nixexprinput": "nix-ros-overlay",
+    "nixexprinput": "nix-ros-hydra",
     "nixexprpath": "release.nix",
     "checkinterval": 3600,
     "schedulingshares": 50,
@@ -87,6 +102,11 @@
     "emailoverride": "",
     "keepnr": 1,
     "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
       "nix-ros-overlay": {
         "type": "git",
         "value": "https://github.com/wentasah/nix-ros-overlay test",
