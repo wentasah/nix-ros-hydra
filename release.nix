@@ -40,6 +40,7 @@ let
       "lib"
       "mkRosDistroOverlay"
       "foxy" # No CI for EOL distro
+      "iron" # No CI for EOL distro
     ];
     examples = mapAttrs
       (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
