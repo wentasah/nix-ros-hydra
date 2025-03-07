@@ -1,13 +1,15 @@
 let
-  lock = builtins.fromJSON (builtins.readFile ./flake.lock);
-  lockedNixpkgs = builtins.fetchTarball {
-    url = "https://github.com/lopsided98/nixpkgs/archive/${lock.nodes.nixpkgs.locked.rev}.tar.gz";
-    sha256 = lock.nodes.nixpkgs.locked.narHash;
-  };
+  nix-ros-overlay-lock = nix-ros-overlay: builtins.fromJSON (builtins.readFile "${nix-ros-overlay}/flake.lock");
+  lockedNixpkgs = nix-ros-overlay:
+    let lock = nix-ros-overlay-lock nix-ros-overlay; in
+    fetchTarball {
+      url = "https://github.com/lopsided98/nixpkgs/archive/${lock.nodes.nixpkgs.locked.rev}.tar.gz";
+      sha256 = lock.nodes.nixpkgs.locked.narHash;
+    };
 in
 {
-  nixpkgs ? lockedNixpkgs,
-  nix-ros-overlay ? ./.,
+  nix-ros-overlay,
+  nixpkgs ? lockedNixpkgs nix-ros-overlay,
   distro ? null, # what to build: null = everything, .* = top or examples, anything else = specific ROS distro
   system ? builtins.currentSystem,
 }:
@@ -26,7 +28,7 @@ let
     "boost"
   ]);
   releaseRosPackages = mapAttrs cleanupDistro pkgs.rosPackages;
-  overlayAttrNames = attrNames ((import ./overlay.nix) null pkgs);
+  overlayAttrNames = attrNames ((import "${nix-ros-overlay}/overlay.nix") null pkgs);
   toplevelPackagesEntries =
     map (name: { inherit name; value = pkgs.${name} or null; })
       overlayAttrNames;
@@ -40,9 +42,9 @@ let
       "foxy" # No CI for EOL distro
     ];
     examples = mapAttrs
-      (file: _: import (./examples + "/${file}") { inherit pkgs; })
+      (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
       (filterAttrs (n: v: v == "regular")
-        (readDir ./examples));
+        (readDir "${nix-ros-overlay}/examples"));
   };
 in
 if distro == ".top" then toplevelPackages
