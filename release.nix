@@ -12,10 +12,11 @@ in
   nixpkgs ? lockedNixpkgs nix-ros-overlay,
   distro ? null, # what to build: null = everything, .* = top or examples, anything else = specific ROS distro
   system ? builtins.currentSystem,
+  crossSystem ? { system = system; }, # no cross compilation by default
 }:
 let
   pkgs = import nix-ros-overlay {
-    inherit nixpkgs system;
+    inherit nixpkgs system crossSystem;
     config = {
       # Allow building gz-sim-vendor and related packages by hydra.
       # Without this, we get eval failures and don't know about other

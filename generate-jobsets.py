@@ -12,6 +12,7 @@ def template(
     schedulingshares=100,
     keepnr=20,
     checkinterval=3600,
+    cross_config=None,
 ):
     inputs = {
         "nix-ros-hydra": {
@@ -43,6 +44,14 @@ def template(
             "nixpkgs": {
                 "type": "git",
                 "value": f"https://github.com/NixOS/nixpkgs {nixpkgs_branch}",
+                "emailresponsible": False
+            },
+        })
+    if cross_config is not None:
+        inputs.update({
+            "crossSystem": {
+                "type": "nix",
+                "value": cross_config,
                 "emailresponsible": False
             },
         })
@@ -118,6 +127,15 @@ def generate_experiments(jobsets):
         distro=None,
         schedulingshares=50,
         keepnr=1,
+    )
+    jobsets["lopsided98-develop-cross"] = template(
+        "lopsided98",
+        "develop",
+        system="x86_64-linux",
+        distro=None,
+        schedulingshares=50,
+        keepnr=1,
+        cross_config='{ config = "aarch64-unknown-linux-gnu"; }',
     )
 
 
