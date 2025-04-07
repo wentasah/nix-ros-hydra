@@ -182,6 +182,11 @@
         "value": "x86_64-linux",
         "emailresponsible": false
       },
+      "nixpkgs": {
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
+        "emailresponsible": false
+      },
       "crossSystem": {
         "type": "nix",
         "value": "{ config = \"aarch64-unknown-linux-gnu\"; }",
