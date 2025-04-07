@@ -26,3 +26,11 @@ The jobsets are named as `type-pkgset-arch`, where:
 
 [hydra jobsets]: https://hydra.iid.ciirc.cvut.cz/project/nix-ros-overlay
 [nix-ros-overlay]: https://github.com/lopsided98/nix-ros-overlay
+
+## Binary cache
+
+Packages built by these [hydra jobsets][] are available in our
+**experimental** binary cache accessible at
+https://attic.iid.ciirc.cvut.cz/ros. Packages signatures can be
+verified with this public key:
+`ros:JR95vUYsShSqfA1VTYoFt1Nz6uXasm5QrcOsGry9f6Q=`.
