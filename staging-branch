@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+prepare() {
+    git fetch origin
+    git switch staging
+    git reset --keep origin/develop
+
+    branches=(
+        wentasah/nix-bot-QWtbRsRNxj # rosdistro sync, Sat Jun 28 18:40:25 2025
+    )
+
+    git merge "${branches[@]}"
+}
+
+push() {
+    git push -u --force wentasah HEAD:staging
+}
+
+case "$@" in
+    "")
+        echo >&2 "Usage: $0 <prepare|push>"
+        ;;
+    *)
+        set -x
+        "$@"
+        ;;
+esac
