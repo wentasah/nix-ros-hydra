@@ -8,10 +8,34 @@ prepare() {
     git reset --keep origin/develop
 
     branches=(
-        wentasah/nix-bot-QWtbRsRNxj # rosdistro sync, Sat Jun 28 18:40:25 2025
+        pr-630 # [humble] fixes for grid-map packages
+        pr-631 # lanelet2-core: Fix compilation with Boost 1.87
+        pr-636 # noetic: fix rqt-rosmon, rosmon-core, rosgraph
+        pr-641 # Add Kilted Kaiju ROS distro (also included in wentasah/update-2025-07-04)
+        wentasah/zenoh-cpp-vendor # also included in wentasah/update-2025-07-04
+        wentasah/extend-ament-vendor-autoupdate # also included in wentasah/update-2025-07-04
+        wentasah/update-2025-07-04 # rosdistro sync, Sat Jun 28 18:40:25 2025
     )
 
-    git merge "${branches[@]}"
+    # Create branches from PRs
+    for i in "${branches[@]}"; do
+        if [[ $i =~ pr-[0-9]* ]]; then
+            num=${i#pr-}
+            git fetch origin "pull/$num/head:pr-$num"
+        fi
+    done
+
+    msg="Update staging branch
+
+This commit was created with this script:
+https://github.com/wentasah/nix-ros-hydra/blob/main/staging-branch
+
+Hydra job for building this branch is at:
+https://hydra.iid.ciirc.cvut.cz/jobset/nix-ros-experiments/wentasah-staging.
+
+"
+
+    git merge --log -m "$msg" "${branches[@]}"
 }
 
 push() {
