@@ -59,7 +59,7 @@
       }
     }
   },
-  "wentasah-finalAttrs": {
+  "wentasah-develop": {
     "enabled": 1,
     "hidden": false,
     "description": "",
@@ -79,7 +79,7 @@
       },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay finalAttrs",
+        "value": "https://github.com/wentasah/nix-ros-overlay develop",
         "emailresponsible": false
       },
       "system": {
@@ -89,7 +89,7 @@
       }
     }
   },
-  "wentasah-staging": {
+  "wentasah-master": {
     "enabled": 1,
     "hidden": false,
     "description": "",
@@ -109,7 +109,7 @@
       },
       "nix-ros-overlay": {
         "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-overlay staging",
+        "value": "https://github.com/wentasah/nix-ros-overlay master",
         "emailresponsible": false
       },
       "system": {
