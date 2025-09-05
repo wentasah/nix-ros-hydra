@@ -71,7 +71,7 @@ def template(
     }
 
 
-def generate_nix_ros_overlay(jobsets):
+def generate_nix_ros_overlay(jobsets, owner):
     for job_type in ['master', 'develop', 'unstable']:
         for system in ['x86_64-linux', 'aarch64-linux']:
             for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'kilted', 'rolling']:
@@ -93,7 +93,7 @@ def generate_nix_ros_overlay(jobsets):
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
                     template(
-                        'lopsided98',
+                        owner,
                         branch,
                         system,
                         distro if distro != ".all" else None,
@@ -143,7 +143,8 @@ def generate_experiments(jobsets):
 jobsets = {}
 
 match sys.argv[1]:
-    case "nix_ros_overlay": generate_nix_ros_overlay(jobsets)
+    case "nix_ros_overlay": generate_nix_ros_overlay(jobsets, "lopsided98")
+    case "nix_ros_overlay_wentasah": generate_nix_ros_overlay(jobsets, "wentasah")
     case "nix_ros_experiments": generate_experiments(jobsets)
 
 print(json.dumps(jobsets, indent=2))
