@@ -128,6 +128,7 @@ def generate_experiments(jobsets):
         distro=None,
         schedulingshares=50,
         keepnr=1,
+        checkinterval=86400,
     )
     jobsets["lopsided98-develop-cross"] = template(
         "lopsided98",
@@ -137,6 +138,7 @@ def generate_experiments(jobsets):
         schedulingshares=50,
         keepnr=1,
         cross_config='{ config = "aarch64-unknown-linux-gnu"; }',
+        checkinterval=86400,
     )
 
 
