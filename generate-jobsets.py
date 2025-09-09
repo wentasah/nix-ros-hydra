@@ -106,8 +106,8 @@ def generate_nix_ros_overlay(jobsets, owner):
 
 def generate_experiments(jobsets):
     for owner, branch in [
-            ("lopsided98", "master"),
             ("lopsided98", "develop"),
+            ("lopsided98", "master"),
             ("wentasah", "ament-vendor-auto-update"),
             ("wentasah", "develop"),
             ("wentasah", "master"),
