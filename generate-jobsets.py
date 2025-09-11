@@ -131,6 +131,15 @@ def generate_experiments(jobsets):
         keepnr=1,
         checkinterval=86400,
     )
+    jobsets["lopsided98-noetic-stable"] = template(
+        "lopsided98",
+        "develop",
+        nixpkgs_branch="nixos-25.05",
+        system="x86_64-linux",
+        distro="noetic",
+        schedulingshares=50,
+        keepnr=1,
+    )
     jobsets["lopsided98-develop-cross"] = template(
         "lopsided98",
         "develop",
