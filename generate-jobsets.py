@@ -108,9 +108,6 @@ def generate_experiments(jobsets):
     for owner, branch in [
             ("lopsided98", "develop"),
             ("lopsided98", "master"),
-            ("wentasah", "ament-vendor-auto-update"),
-            ("wentasah", "develop"),
-            ("wentasah", "master"),
             ("wentasah", "test"),
     ]:
         jobsets[f"{owner}-{branch}"] = template(
