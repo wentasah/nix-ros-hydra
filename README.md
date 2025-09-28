@@ -14,6 +14,8 @@ The jobsets are named as `type-pkgset-arch`, where:
   pinned version of nixpkgs.
 - `unstable`: `develop` branch of nix-ros-overlay built against
   `nixos-unstable` branch of nixpkgs.
+- `ros1`: branch `ros1-25.05` of nix-ros-overlay built against
+  `nixos-25.05` branch of nixpkgs.
 
 `pkgset` is:
 
