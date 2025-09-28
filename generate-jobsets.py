@@ -154,7 +154,6 @@ jobsets = {}
 
 match sys.argv[1]:
     case "nix_ros_overlay": generate_nix_ros_overlay(jobsets, "lopsided98")
-    case "nix_ros_overlay_wentasah": generate_nix_ros_overlay(jobsets, "wentasah")
     case "nix_ros_experiments": generate_experiments(jobsets)
 
 print(json.dumps(jobsets, indent=2))
