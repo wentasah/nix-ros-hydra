@@ -48,9 +48,11 @@ let
   validToplevelPackageEntries = filter (e: isDerivation e.value)
     toplevelPackagesEntries;
   toplevelPackages = listToAttrs validToplevelPackageEntries;
-  exampleRos2GzForDistro = rosDistro: nameValuePair "ros2-gz-${rosDistro}" (
-    import ("${nix-ros-overlay}/examples/ros2-gz.nix") { inherit pkgs rosDistro; }
-  );
+  exampleForDistro = exampleName: rosDistro:
+    nameValuePair "example-${exampleName}-${rosDistro}" (
+      import "${nix-ros-overlay}/examples/${exampleName}.nix" { inherit pkgs rosDistro; }
+    );
+  inherit (pkgs.rosPackages.lib) distroNames;
   releasePackages = toplevelPackages // {
     rosPackages = removeAttrs releaseRosPackages [
       "lib"
@@ -62,7 +64,12 @@ let
       (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
       (filterAttrs (n: v: v == "regular")
         (readDir "${nix-ros-overlay}/examples")))
-    // genAttrs' [ "jazzy" "kilted" "rolling" ] exampleRos2GzForDistro;
+    // (genAttrs' [ "jazzy" "kilted" "rolling" ] (exampleForDistro "ros2-gz"))
+    // (genAttrs' distroNames (exampleForDistro "ros2-gz"))
+    // (genAttrs' distroNames (exampleForDistro "ros2-basic"))
+    // (genAttrs' distroNames (exampleForDistro "ros2-desktop"))
+    // (genAttrs' distroNames (exampleForDistro "ros2-desktop-full"))
+    ;
   };
 in
 if distro == ".top" then toplevelPackages
