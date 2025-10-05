@@ -27,8 +27,9 @@ let
       ];
     };
   };
-  inherit (pkgs.lib) isDerivation filterAttrs;
+  inherit (pkgs.lib) isDerivation filterAttrs nameValuePair;
   inherit (builtins) mapAttrs attrNames filter listToAttrs readDir;
+  genAttrs' = xs: f: listToAttrs (map f xs); # TODO remove after we're at newer nixpkgs
   cleanupDistro = (_: a: removeAttrs a [
     "lib"
     "python"
@@ -47,6 +48,9 @@ let
   validToplevelPackageEntries = filter (e: isDerivation e.value)
     toplevelPackagesEntries;
   toplevelPackages = listToAttrs validToplevelPackageEntries;
+  exampleRos2GzForDistro = rosDistro: nameValuePair "ros2-gz-${rosDistro}" (
+    import ("${nix-ros-overlay}/examples/ros2-gz.nix") { inherit pkgs rosDistro; }
+  );
   releasePackages = toplevelPackages // {
     rosPackages = removeAttrs releaseRosPackages [
       "lib"
@@ -54,11 +58,11 @@ let
       "foxy" # No CI for EOL distro
       "iron" # No CI for EOL distro
     ];
-    examples = mapAttrs
-      # TODO create jobs for different distros (now supported only by ros2-gz)
+    examples = (mapAttrs
       (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
       (filterAttrs (n: v: v == "regular")
-        (readDir "${nix-ros-overlay}/examples"));
+        (readDir "${nix-ros-overlay}/examples")))
+    // genAttrs' [ "jazzy" "kilted" "rolling" ] exampleRos2GzForDistro;
   };
 in
 if distro == ".top" then toplevelPackages
