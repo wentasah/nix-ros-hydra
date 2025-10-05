@@ -55,6 +55,7 @@ let
       "iron" # No CI for EOL distro
     ];
     examples = mapAttrs
+      # TODO create jobs for different distros (now supported only by ros2-gz)
       (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
       (filterAttrs (n: v: v == "regular")
         (readDir "${nix-ros-overlay}/examples"));
