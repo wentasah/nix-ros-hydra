@@ -49,7 +49,7 @@ let
     toplevelPackagesEntries;
   toplevelPackages = listToAttrs validToplevelPackageEntries;
   exampleForDistro = exampleName: rosDistro:
-    nameValuePair "example-${exampleName}-${rosDistro}" (
+    nameValuePair "${exampleName}-${rosDistro}" (
       import "${nix-ros-overlay}/examples/${exampleName}.nix" { inherit pkgs rosDistro; }
     );
   inherit (pkgs.rosPackages.lib) distroNames;
