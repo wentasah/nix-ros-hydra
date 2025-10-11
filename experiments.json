@@ -59,6 +59,36 @@
       }
     }
   },
+  "lopsided98-ros1-25.05": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-hydra",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 50,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/lopsided98/nix-ros-overlay ros1-25.05",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      }
+    }
+  },
   "wentasah-rosdistro-sync": {
     "enabled": 1,
     "hidden": false,

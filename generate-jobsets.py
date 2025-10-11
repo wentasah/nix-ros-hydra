@@ -113,6 +113,7 @@ def generate_experiments(jobsets):
     for owner, branch in [
             ("lopsided98", "develop"),
             ("lopsided98", "master"),
+            ("lopsided98", "ros1-25.05"),
             ("wentasah", "rosdistro-sync"),
             ("wentasah", "test"),
     ]:
