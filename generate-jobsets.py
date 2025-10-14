@@ -74,7 +74,7 @@ def template(
 def generate_nix_ros_overlay(jobsets, owner):
     for job_type in ['master', 'develop', 'unstable', 'ros1']:
         for system in ['x86_64-linux', 'aarch64-linux']:
-            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'kilted', 'rolling']:
+            for distro in ['.top', '.examples', '.all', 'humble', 'jazzy', 'kilted', 'rolling']:
                 # Set job defaults
                 branch = job_type
                 nixpkgs_branch = None
@@ -93,7 +93,7 @@ def generate_nix_ros_overlay(jobsets, owner):
                 if job_type == 'ros1':
                     branch = "ros1-25.05"
                     # nixpkgs_branch = "nixos-25.05" # this branch is already locked in flake.nix
-                    if not distro in ["noetic", ".top", ".examples"]:
+                    if distro not in ["noetic", "humble", ".top", ".examples"]:
                         continue
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
@@ -134,15 +134,6 @@ def generate_experiments(jobsets):
         schedulingshares=50,
         keepnr=1,
         checkinterval=86400,
-    )
-    jobsets["lopsided98-noetic-stable"] = template(
-        "lopsided98",
-        "develop",
-        nixpkgs_branch="nixos-25.05",
-        system="x86_64-linux",
-        distro="noetic",
-        schedulingshares=50,
-        keepnr=1,
     )
     jobsets["lopsided98-develop-cross"] = template(
         "lopsided98",

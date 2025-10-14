@@ -99,41 +99,6 @@
       }
     }
   },
-  "master-noetic-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay master",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
-        "emailresponsible": false
-      }
-    }
-  },
   "master-humble-x86_64": {
     "enabled": 1,
     "hidden": false,
@@ -370,41 +335,6 @@
       "system": {
         "type": "string",
         "value": "aarch64-linux",
-        "emailresponsible": false
-      }
-    }
-  },
-  "master-noetic-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay master",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
         "emailresponsible": false
       }
     }
@@ -649,41 +579,6 @@
       }
     }
   },
-  "develop-noetic-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 300,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
-        "emailresponsible": false
-      }
-    }
-  },
   "develop-humble-x86_64": {
     "enabled": 1,
     "hidden": false,
@@ -920,41 +815,6 @@
       "system": {
         "type": "string",
         "value": "aarch64-linux",
-        "emailresponsible": false
-      }
-    }
-  },
-  "develop-noetic-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 300,
-    "schedulingshares": 100,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 20,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
         "emailresponsible": false
       }
     }
@@ -1205,46 +1065,6 @@
       "system": {
         "type": "string",
         "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "nixpkgs": {
-        "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
-        "emailresponsible": false
-      }
-    }
-  },
-  "unstable-noetic-x86_64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 30,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 5,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "x86_64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
         "emailresponsible": false
       },
       "nixpkgs": {
@@ -1529,46 +1349,6 @@
       }
     }
   },
-  "unstable-noetic-aarch64": {
-    "enabled": 1,
-    "hidden": false,
-    "description": "",
-    "nixexprinput": "nix-ros-hydra",
-    "nixexprpath": "release.nix",
-    "checkinterval": 3600,
-    "schedulingshares": 30,
-    "enableemail": false,
-    "enable_dynamic_run_command": false,
-    "emailoverride": "",
-    "keepnr": 5,
-    "inputs": {
-      "nix-ros-hydra": {
-        "type": "git",
-        "value": "https://github.com/wentasah/nix-ros-hydra main",
-        "emailresponsible": false
-      },
-      "nix-ros-overlay": {
-        "type": "git",
-        "value": "https://github.com/lopsided98/nix-ros-overlay develop",
-        "emailresponsible": false
-      },
-      "system": {
-        "type": "string",
-        "value": "aarch64-linux",
-        "emailresponsible": false
-      },
-      "distro": {
-        "type": "string",
-        "value": "noetic",
-        "emailresponsible": false
-      },
-      "nixpkgs": {
-        "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-unstable",
-        "emailresponsible": false
-      }
-    }
-  },
   "unstable-humble-aarch64": {
     "enabled": 1,
     "hidden": false,
@@ -1799,7 +1579,7 @@
       }
     }
   },
-  "ros1-noetic-x86_64": {
+  "ros1-humble-x86_64": {
     "enabled": 1,
     "hidden": false,
     "description": "",
@@ -1829,7 +1609,7 @@
       },
       "distro": {
         "type": "string",
-        "value": "noetic",
+        "value": "humble",
         "emailresponsible": false
       }
     }
@@ -1904,7 +1684,7 @@
       }
     }
   },
-  "ros1-noetic-aarch64": {
+  "ros1-humble-aarch64": {
     "enabled": 1,
     "hidden": false,
     "description": "",
@@ -1934,7 +1714,7 @@
       },
       "distro": {
         "type": "string",
-        "value": "noetic",
+        "value": "humble",
         "emailresponsible": false
       }
     }
