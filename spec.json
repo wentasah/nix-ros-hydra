@@ -1579,6 +1579,41 @@
       }
     }
   },
+  "ros1-noetic-x86_64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-hydra",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/lopsided98/nix-ros-overlay ros1-25.05",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "x86_64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
+        "emailresponsible": false
+      }
+    }
+  },
   "ros1-humble-x86_64": {
     "enabled": 1,
     "hidden": false,
@@ -1680,6 +1715,41 @@
       "distro": {
         "type": "string",
         "value": ".examples",
+        "emailresponsible": false
+      }
+    }
+  },
+  "ros1-noetic-aarch64": {
+    "enabled": 1,
+    "hidden": false,
+    "description": "",
+    "nixexprinput": "nix-ros-hydra",
+    "nixexprpath": "release.nix",
+    "checkinterval": 3600,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "enable_dynamic_run_command": false,
+    "emailoverride": "",
+    "keepnr": 20,
+    "inputs": {
+      "nix-ros-hydra": {
+        "type": "git",
+        "value": "https://github.com/wentasah/nix-ros-hydra main",
+        "emailresponsible": false
+      },
+      "nix-ros-overlay": {
+        "type": "git",
+        "value": "https://github.com/lopsided98/nix-ros-overlay ros1-25.05",
+        "emailresponsible": false
+      },
+      "system": {
+        "type": "string",
+        "value": "aarch64-linux",
+        "emailresponsible": false
+      },
+      "distro": {
+        "type": "string",
+        "value": "noetic",
         "emailresponsible": false
       }
     }

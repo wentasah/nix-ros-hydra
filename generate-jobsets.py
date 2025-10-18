@@ -74,7 +74,7 @@ def template(
 def generate_nix_ros_overlay(jobsets, owner):
     for job_type in ['master', 'develop', 'unstable', 'ros1']:
         for system in ['x86_64-linux', 'aarch64-linux']:
-            for distro in ['.top', '.examples', '.all', 'humble', 'jazzy', 'kilted', 'rolling']:
+            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'kilted', 'rolling']:
                 # Set job defaults
                 branch = job_type
                 nixpkgs_branch = None
@@ -94,6 +94,9 @@ def generate_nix_ros_overlay(jobsets, owner):
                     branch = "ros1-25.05"
                     # nixpkgs_branch = "nixos-25.05" # this branch is already locked in flake.nix
                     if distro not in ["noetic", "humble", ".top", ".examples"]:
+                        continue
+                else:
+                    if distro == "noetic":
                         continue
 
                 jobsets[f"{job_type}-{distro.strip('.')}-{system.split('-')[0]}"] = (
