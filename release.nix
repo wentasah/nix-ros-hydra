@@ -27,7 +27,7 @@ let
       ];
     };
   };
-  inherit (pkgs.lib) isDerivation filterAttrs nameValuePair;
+  inherit (pkgs.lib) isDerivation filterAttrs nameValuePair flatten;
   inherit (builtins) mapAttrs attrNames filter listToAttrs readDir;
   genAttrs' = xs: f: listToAttrs (map f xs); # TODO remove after we're at newer nixpkgs
   cleanupDistro = (_: a: removeAttrs a [
@@ -47,7 +47,16 @@ let
       overlayAttrNames;
   validToplevelPackageEntries = filter (e: isDerivation e.value)
     toplevelPackagesEntries;
-  toplevelPackages = listToAttrs validToplevelPackageEntries;
+  pythonPackageNames = flatten (map (f: attrNames (f null null)) pkgs.pythonPackagesExtensions);
+  pythonPackagesEntries = (
+    map (name: {
+      inherit name;
+      value = pkgs.python3Packages.${name} or null;
+    }) pythonPackageNames
+  );
+  toplevelPackages = listToAttrs validToplevelPackageEntries // {
+    python3Packages = listToAttrs pythonPackagesEntries;
+  };
   exampleForDistro = exampleName: rosDistro:
     nameValuePair "${exampleName}-${rosDistro}" (
       import "${nix-ros-overlay}/examples/${exampleName}.nix" { inherit pkgs rosDistro; }
