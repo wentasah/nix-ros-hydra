@@ -1,0 +1,29 @@
+name: "Push rosdistro sync PR to Hydra"
+on:
+  schedule:
+    - cron: "15/15 12 * * FRI"
+    - cron: "0/30 13 * * FRI"
+    - cron: "0 14-17 * * FRI"
+  workflow_dispatch:
+jobs:
+  rosdistro-sync:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          repository: 'wentasah/nix-ros-overlay'
+          token: ${{ secrets.REPO_TOKEN }}
+      - name: Sync nix-bot branch
+        run: |
+          set -ex
+          branch=$(gh pr list --repo lopsided98/nix-ros-overlay --search 'rosdistro sync in:title' --json headRefName | jq -r '.[].headRefName' | grep '^nix-bot-' | head -n1)
+          git config --global user.email bot@github
+          git config --global user.name "Github Action"
+          git fetch origin refs/heads/rosdistro-sync
+          git fetch https://github.com/lopsided98/nix-ros-overlay.git $branch
+          if ! git merge-base --is-ancestor FETCH_HEAD origin/rosdistro-sync; then
+            # only overwrite the branch if it was not manually extended
+            git push --force origin FETCH_HEAD:refs/heads/rosdistro-sync
+          fi
