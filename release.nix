@@ -40,7 +40,8 @@ let
     "python3Packages"
     "boost"
   ]);
-  releaseRosPackages = mapAttrs cleanupDistro pkgs.rosPackages;
+  rosDistros = filterAttrs (n: v: builtins.isAttrs v) pkgs.rosPackages;
+  releaseRosPackages = mapAttrs cleanupDistro rosDistros;
   overlayAttrNames = attrNames ((import "${nix-ros-overlay}/overlay.nix") null pkgs);
   toplevelPackagesEntries =
     map (name: { inherit name; value = pkgs.${name} or null; })
