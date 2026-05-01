@@ -74,7 +74,7 @@ let
       (file: _: import ("${nix-ros-overlay}/examples/${file}") { inherit pkgs; })
       (filterAttrs (n: v: v == "regular")
         (readDir "${nix-ros-overlay}/examples")))
-    // (genAttrs' [ "jazzy" "kilted" "rolling" ] (exampleForDistro "ros2-gz"))
+    // (genAttrs' [ "jazzy" "kilted" "lyrical" "rolling" ] (exampleForDistro "ros2-gz"))
     // (genAttrs' distroNames (exampleForDistro "ros2-gz"))
     // (genAttrs' distroNames (exampleForDistro "ros2-basic"))
     // (genAttrs' distroNames (exampleForDistro "ros2-desktop"))

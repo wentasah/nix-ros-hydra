@@ -74,7 +74,7 @@ def template(
 def generate_nix_ros_overlay(jobsets, owner):
     for job_type in ['master', 'develop', 'unstable', 'ros1']:
         for system in ['x86_64-linux', 'aarch64-linux']:
-            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'kilted', 'rolling']:
+            for distro in ['.top', '.examples', '.all', 'noetic', 'humble', 'jazzy', 'kilted', 'lyrical', 'rolling']:
                 # Set job defaults
                 branch = job_type
                 nixpkgs_branch = None
