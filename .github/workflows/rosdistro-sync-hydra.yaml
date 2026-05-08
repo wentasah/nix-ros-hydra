@@ -1,9 +1,9 @@
 name: "Push rosdistro sync PR to Hydra"
 on:
   schedule:
-    - cron: "15/15 12 * * FRI"
-    - cron: "0/30 13 * * FRI"
-    - cron: "0 14-17 * * FRI"
+    - cron: "15/15 12-13 * * FRI"
+    - cron: "0/30 14-17 * * FRI"
+    - cron: "0 18-23 * * FRI"
   workflow_dispatch:
 jobs:
   rosdistro-sync:
