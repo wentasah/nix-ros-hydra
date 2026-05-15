@@ -128,6 +128,15 @@ def generate_experiments(jobsets):
             schedulingshares=50,
             keepnr=1,
         )
+        if branch != "ros1-25.05":
+            jobsets[f"{owner}-{branch}-aarch64"] = template(
+                owner,
+                branch,
+                system="aarch64-linux",
+                distro=None,
+                schedulingshares=50,
+                keepnr=1,
+            )
     jobsets["lopsided98-develop-stable"] = template(
         "lopsided98",
         "develop",
