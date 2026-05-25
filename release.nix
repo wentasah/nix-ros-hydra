@@ -18,18 +18,11 @@ let
   pkgs = import nix-ros-overlay {
     inherit nixpkgs system crossSystem;
     config = {
-      # Allow building gz-sim-vendor and related packages by hydra.
-      # Without this, we get eval failures and don't know about other
-      # errors. Users then complain about them.
-      permittedInsecurePackages = [
-        "freeimage-unstable-2021-11-01"
-        "freeimage-3.18.0-unstable-2024-04-18"
-      ];
+      permittedInsecurePackages = [ ];
     };
   };
-  inherit (pkgs.lib) isDerivation filterAttrs nameValuePair flatten;
+  inherit (pkgs.lib) isDerivation filterAttrs nameValuePair flatten genAttrs';
   inherit (builtins) mapAttrs attrNames filter listToAttrs readDir;
-  genAttrs' = xs: f: listToAttrs (map f xs); # TODO remove after we're at newer nixpkgs
   cleanupDistro = (_: a: removeAttrs a [
     "lib"
     "python"
