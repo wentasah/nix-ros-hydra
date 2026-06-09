@@ -140,7 +140,7 @@ def generate_experiments(jobsets):
     jobsets["lopsided98-develop-stable"] = template(
         "lopsided98",
         "develop",
-        nixpkgs_branch="nixos-25.11",
+        nixpkgs_branch="nixos-26.05",
         system="x86_64-linux",
         distro=None,
         schedulingshares=50,

@@ -299,7 +299,7 @@
       },
       "nixpkgs": {
         "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-25.11",
+        "value": "https://github.com/NixOS/nixpkgs nixos-26.05",
         "emailresponsible": false
       }
     }
