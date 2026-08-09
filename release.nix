@@ -27,8 +27,6 @@ let
     "boost"
     "lib"
     "python"
-    "python2"
-    "python2Packages"
     "python3"
     "python3Packages"
     "pythonPackages"
