@@ -30,6 +30,7 @@ let
     "python3"
     "python3Packages"
     "pythonPackages"
+    "qt5or6"
   ]);
   rosDistros = filterAttrs (n: v: builtins.isAttrs v) pkgs.rosPackages;
   releaseRosPackages = mapAttrs cleanupDistro rosDistros;
