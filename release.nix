@@ -24,14 +24,14 @@ let
   inherit (pkgs.lib) isDerivation filterAttrs nameValuePair flatten genAttrs';
   inherit (builtins) mapAttrs attrNames filter listToAttrs readDir;
   cleanupDistro = (_: a: removeAttrs a [
+    "boost"
     "lib"
     "python"
-    "python3"
     "python2"
-    "pythonPackages"
     "python2Packages"
+    "python3"
     "python3Packages"
-    "boost"
+    "pythonPackages"
   ]);
   rosDistros = filterAttrs (n: v: builtins.isAttrs v) pkgs.rosPackages;
   releaseRosPackages = mapAttrs cleanupDistro rosDistros;
